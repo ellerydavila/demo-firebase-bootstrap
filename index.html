@@ -9,6 +9,42 @@
       href="style.css">
 </head>
 <body>
+    <textarea
+      id='message'
+      placeholder='message'
+      rows='3'
+      cols='25'></textarea>
+    <br>
+    <input
+      id='sender'
+      placeholder='sender'>
+    <br>
+    <button
+      onclick='addTweet()'>
+        send
+    </button>
+    <br>
+    <br>
+    <select
+      id='recent'
+      onchange='refresh()'>
+        <option>
+            5
+        </option>
+        <option>
+            10
+        </option>
+        <option>
+            20
+        </option>
+    </select>
+    most recent
+    <br>
+    <br>
+    <div
+      id='tweets'>
+    </div>
+  
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
